@@ -9,7 +9,7 @@ html,body{
     background-color: rgba(238, 235, 235, 0.6);
 }
 
-a{
+.a-tag{
     display: flex;
     text-decoration: none;
     color: gray;

@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이용약관</title>
     <link rel="stylesheet" href="../../css/form/joinAgree.css">
-    <link rel="icon" herf="/img/로고.png">
+    <link rel="icon" herf="../../img/로고.png">
 </head>
 <body>
     <div class="container">
         <h2>이용약관 동의</h2>
-        <form action="joinInform.html">
+        <form action="joinInform.jsp">
             <div class="agree-container">
                 <label for="" class="agree-label">
                     <div class="agree-all">
@@ -25,7 +25,7 @@
                             <span class="agree-text">개인정보 수집·이용에 동의합니다.</span>
                             <span class="agree-must">(필수)</span>
                         </div>
-                        <a href="" class="a">내용보기</a>
+                        <a href="" class="a-tag">내용보기</a>
                     </div>
                     <div class="personal-inform">
                         <p>개인정보 수집</p>
@@ -39,7 +39,7 @@
                             <span>이용약관에 동의합니다.</span>
                             <span class="agree-must">(필수)</span>
                         </div>
-                        <a href="">내용보기</a>
+                        <a href="" class="a-tag">내용보기</a>
                     </div>
                     <div class="agree-content">
                         <div class="agree">
@@ -47,7 +47,7 @@
                             <span>위치기반 서비스 약관에 동의합니다.</span>
                             <span class="agree-must">(필수)</span>
                         </div>
-                        <a href="">내용보기</a>
+                        <a href="" class="a-tag">내용보기</a>
                     </div>
                     <div class="agree-content">
                         <div class="agree">

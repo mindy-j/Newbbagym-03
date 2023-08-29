@@ -1,20 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" href="../../css/form/login.css">
-    <link rel="icon" herf="/img/로고.png">
+    <link rel="icon" herf="../../img/로고.png">
 </head>
 <body>
     <div class="container">
-        <a href="/main/main.html">
+        <a href="../../index.jsp">
             <img src="../../img/로고.png" class="logo">
         </a>
-        <form action="myPage.html">
+        <form action="">
             <div class="id-container">
                 <div class="id-text">아이디</div>
                 <input type="text" placeholder="아이디를 입력해 주세요." class="id" id="id">
@@ -26,9 +26,9 @@
             <input type="submit" value="로그인" class="login-btn" id="login-btn" disabled>
         </form>
         <div class="find-container">
-            <a href="findId.html" class="find-id">아이디 찾기</a>
-            <a href="findPw.html" class="find-password">비밀번호 찾기</a>
-            <a href="joinAgree.html" class="join">회원가입</a>
+            <a href="findId.jsp" class="find-id">아이디 찾기</a>
+            <a href="findPw.jsp" class="find-password">비밀번호 찾기</a>
+            <a href="joinAgree.jsp" class="join">회원가입</a>
         </div>
         <div class="banner-container">
             <img src="http://localhost:8888/bbagym/img/mainImg/test.png" class="banner">
