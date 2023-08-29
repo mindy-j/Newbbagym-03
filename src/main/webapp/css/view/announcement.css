@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+    *{
+            margin:0;
+            padding:0;
+
+        }
+        html,body{
+            width:100%;
+            height: 100%;
+            background-color: rgba(238, 235, 235,0.6);
+        }
+        
+        .container{
+            width:60%;
+            height: 90%;
+            margin:auto;
+            
+            background-color: white;
+            
+        }
+
+        .topbar-out-div{
+            display: flex;
+            width:100%;
+            position: relative;
+            
+            background-color: white;
+            
+            
+            
+        }
+
+        .topbar-inner-div{
+            width: 100%;
+            position: relative;
+            margin-top: 10px;
+            margin-right: 46px;
+            text-overflow: ellipsis;
+            text-align: center;
+            
+            }
+
+            .topbar-main{
+                width:100%;
+                margin-top: 12px;
+                height: 100%;
+                position: relative;
+                
+            }
+
+        
+
+        .div{
+            width: 100%;
+            height: 9.5%;
+            border-bottom: 1px solid gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+
+        }
+
+        /* .inner-div{
+            padding: 10px;
+          }   */
+        
+
+        .date{
+            float: right;
+            color: gray;
+            font-weight: bold;
+            display:flex;
+            justify-content: end;
+        }
+        
+        
+        .blueText{
+            color:blue;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #last-div{
+            border-bottom: 0px;
+        }
+.button-div{
+            height:5%;
+            text-align: center;
+            display:flex;
+            justify-content: end;
+        }
+
+        .main-button{
+            margin:auto;
+            
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        .button{
+                cursor:pointer; 
+            
+        }
+        .title{
+            text-align: center;
+        
+        }
+        
+        .date-div{
+            padding: 15px;
+        }
