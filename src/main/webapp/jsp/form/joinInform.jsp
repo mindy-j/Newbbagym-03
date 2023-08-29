@@ -1,20 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="../../css/form/joinInform.css">
-    <link rel="icon" herf="/img/로고.png">
+    <link rel="icon" herf="../../img/로고.png">
 </head>
 <body>
     <div class="container">
-        <a href="">
+        <a href="../../index.jsp">
             <img src="../../img/로고.png" class="logo" />
         </a>
-        <form action="login.html">
+        <form action="">
             <div class="inform-container">
                 <div class="inform-text">아이디</div>
                 <input type="text" placeholder="아이디를 입력해주세요" class="inform" id="id">
