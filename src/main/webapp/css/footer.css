@@ -7,6 +7,12 @@
 body,html{
 	background-color: rgba(238, 235, 235,0.6);
 }
+
+a{
+	 text-decoration: none;
+	 color: #58595B;
+}
+
 .footer_full_div{
     /*margin-top: 20px;*/
     width:60%;
