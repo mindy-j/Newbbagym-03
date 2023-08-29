@@ -17,7 +17,7 @@
               
                 <div class="list-content">
                         <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                            <a href="../cuj/gymDetaile.html">
+                            <a href="gymDetaile.jsp">
                                 <img class="list-img" src="img-ljm/운동시설1.jpg"/><!--게시판 사진-->
                             </a>
                             
@@ -44,7 +44,7 @@
                     <div class="list-content">
                         
                             <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                                <a href="../cuj/gymDetaile.html">
+                                <a href="gymDetaile.jsp">
                                     <img class="list-img" src="img-ljm/운동시설2.jpg"/><!--게시판 사진-->
                                 </a>
                             </div>
@@ -71,7 +71,7 @@
                 <div class="list-content">
                     
                         <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                            <a href="../cuj/gymDetaile.html">
+                            <a href="gymDetaile.jsp">
                                 <img class="list-img" src="img-ljm/운동시설3.jpg"/><!--게시판 사진-->
                             </a>
 
@@ -96,7 +96,7 @@
                 <div class="list-content">
                     
                         <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                            <a href="../cuj/gymDetaile.html">
+                            <a href="gymDetaile.jsp">
                                 <img class="list-img" src="img-ljm/운동시설4.jpg"/><!--게시판 사진-->
                             </a>
                         </div>
@@ -143,7 +143,7 @@
                 <div class="list-content">
                     
                         <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                            <a href="../cuj/gymDetaile.html">
+                            <a href="gymDetaile.jsp">
                                 <img class="list-img" src="img-ljm/운동시설6.jpg"/><!--게시판 사진-->
                             </a>
                         </div>
@@ -167,7 +167,7 @@
                 <div class="list-content">
                     
                         <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                            <a href="../cuj/gymDetaile.html">
+                            <a href="gymDetaile.jsp">
                                 <img class="list-img" src="img-ljm/운동시설7.jpg"/><!--게시판 사진-->
                             </a>
                         </div>
@@ -214,7 +214,7 @@
                 <div class="list-content">
                     
                         <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                            <a href="../cuj/gymDetaile.html">
+                            <a href="gymDetaile.jsp">
                                 <img class="list-img" src="img-ljm/운동시설9.jpg"/><!--게시판 사진-->
                             </a>
                         </div>
@@ -235,7 +235,7 @@
                 <div class="list-content">
                     
                         <div class="list-img-box"><!--게시판 사진 컨테이너-->
-                            <a href="../cuj/gymDetaile.html">
+                            <a href="gymDetaile.jsp">
                                 <img class="list-img" src="img-ljm/운동시설10.jpg"/><!--게시판 사진-->
                             </a>
                         </div>
@@ -264,7 +264,7 @@
             
         </div>
         <div class="input-form">
-            <button class="write-button" onclick="location.href='../cuj/gymWrite.html'" >글작성</button>
+            <button class="write-button" onclick="location.href='../form/gymWrite.jsp'" >글작성</button>
         </div>
     </div>
 <%@include file="../../footer.jsp" %>

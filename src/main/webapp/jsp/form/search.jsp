@@ -14,7 +14,7 @@
         <h2 class="search-title">어떤 운동을 찾으세요?</h2>
         <br>
        <div class="search-box">
-        <form action="gymList.html" class="search-form">
+        <form action="../view/gymList.jsp" class="search-form">
             <input class="search-bar" type="text"/>
         </form>
        </div>

@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/admin_notice.css">
-    <link rel="stylesheet" href="css/admin_header.css"/>
-    <link rel="icon" href="../img/·Î°í.png">
-    <title>°øÁö»çÇ× page</title>
+    <link rel="stylesheet" href="../../css/admin/adminNotice.css">
+    <link rel="stylesheet" href="../../css/admin/adminHeader.css"/>
+    <link rel="icon" href="../img/ë¡œê³ .png">
+    <title>ê³µì§€ì‚¬í•­ page</title>
 </head>
 
 <body>
@@ -16,8 +16,8 @@
         <ul class="admin_header_ul">
             <li>
                     <div class="admin_header_category">
-                        <a href="admin_board.html">
-                            °Ô½ÃÆÇ°ü¸®
+                        <a href="adminBoard.jsp">
+                            ê²Œì‹œíŒê´€ë¦¬
                         </a>
                     </div>
                 
@@ -25,119 +25,119 @@
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="admin_user.html">
-                        È¸¿ø°ü¸®
+                    <a href="adminUser.jsp">
+                        íšŒì›ê´€ë¦¬
                     </a>
                 </div>
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="admin_notice.html">
-                        °øÁö»çÇ× °ü¸®
+                    <a href="adminNotice.jsp">
+                        ê³µì§€ì‚¬í•­ ê´€ë¦¬
                     </a>
                 </div>
             </li>
         </ul>
     </div>
-    <!--¿©±â±îÁö admin_header-->
+    <!--ì—¬ê¸°ê¹Œì§€ admin_header-->
     <div class="container">
         <div class="title">
-            <h2>°øÁö</h2>
+            <h2>ê³µì§€</h2>
         </div>
         
-        <!-- 1¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 1ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
             <div class="div">
-                <div class="inner-div"><span class="blueText">[°øÁö]</span>´ÙÁüº¸´Ù ½Î¸é 100% Àü¾× È¯ºÒ!</div>
+                <div class="inner-div"><span class="blueText">[ê³µì§€]</span>ë‹¤ì§ë³´ë‹¤ ì‹¸ë©´ 100% ì „ì•¡ í™˜ë¶ˆ!</div>
                 <div class="date-div"><span class="date">2021.04.09.</span></div>
             </div>
         </a>
 
-        <!-- 2¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 2ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
-            <div class="inner-div"><span class="blueText">[°øÁö]</span>3Â÷ ÄÚ·Î³ª19 °ü·Ã È¦µù Ãß°¡ °øÁö</div>
+            <div class="inner-div"><span class="blueText">[ê³µì§€]</span>3ì°¨ ì½”ë¡œë‚˜19 ê´€ë ¨ í™€ë”© ì¶”ê°€ ê³µì§€</div>
             <div class="date-div"><span class="date">2020.12.08.</span></div>
         </div>
         </a>
 
-        <!-- 3¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 3ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
             <div class="inner-div">
-                <span class="blueText">[°øÁö]</span>ÄÚ·Î³ª19 »çÈ¸Àû °Å¸®µÎ±â·Î ÀÎÇÑ °í°´¼¾ÅÍ ¿î¿µ ¾È³»</div>
+                <span class="blueText">[ê³µì§€]</span>ì½”ë¡œë‚˜19 ì‚¬íšŒì  ê±°ë¦¬ë‘ê¸°ë¡œ ì¸í•œ ê³ ê°ì„¼í„° ìš´ì˜ ì•ˆë‚´</div>
                 <div class="date-div"><span class="date">2020.08.31.</span></div>
         </div>
         </a>
 
-        <!-- 4¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 4ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
-            <div class="inner-div"><span class="blueText">[°øÁö]</span>2Â÷ ÄÚ·Î³ª19 °ü·Ã È¦µù Ãß°¡ °øÁö</div>
+            <div class="inner-div"><span class="blueText">[ê³µì§€]</span>2ì°¨ ì½”ë¡œë‚˜19 ê´€ë ¨ í™€ë”© ì¶”ê°€ ê³µì§€</div>
             <div class="date-div"> <span class="date">2020.08.28.</span></div>
         </div>
         </a>
 
-        <!-- 5¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 5ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
             <div class="inner-div">
-                <span class="blueText">[°øÁö]</span>ÄÚ·Î³ª19 °ü·Ã È¦µù ¹× ½ÃÀÛÀÏ ¿¬±â Á¦°ø Á¾·á</div>
+                <span class="blueText">[ê³µì§€]</span>ì½”ë¡œë‚˜19 ê´€ë ¨ í™€ë”© ë° ì‹œìž‘ì¼ ì—°ê¸° ì œê³µ ì¢…ë£Œ</div>
             <div class="date-div"> <span class="date">2020.05.06.</span></div>
         </div>
         </a>
 
-        <!-- 6¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 6ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
-            <div class="inner-div"><span class="blueText">[°øÁö]</span>ÄÚ·Î³ª19 Á¤ºÎ ÁöÄ§ °ü·Ã ¿îµ¿±â°£ ¿¬Àå¾È³»</div>
+            <div class="inner-div"><span class="blueText">[ê³µì§€]</span>ì½”ë¡œë‚˜19 ì •ë¶€ ì§€ì¹¨ ê´€ë ¨ ìš´ë™ê¸°ê°„ ì—°ìž¥ì•ˆë‚´</div>
                 <div class="date-div"><span class="date">2020.03.24.</span></div>
         </div>
         </a>
 
-        <!-- 7¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 7ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
-            <div class="inner-div"><span class="blueText">[°øÁö]</span>´ÙÁüº¸´Ù ½Î¸é 100% Àü¾× È¯ºÒ!</div>
+            <div class="inner-div"><span class="blueText">[ê³µì§€]</span>ë‹¤ì§ë³´ë‹¤ ì‹¸ë©´ 100% ì „ì•¡ í™˜ë¶ˆ!</div>
                 <div class="date-div"> <span class="date">2021.04.09.</span></div>
         </div>
         </a>
 
-        <!-- 8¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 8ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
-            <div class="inner-div"><span class="blueText">[°øÁö]</span>3Â÷ ÄÚ·Î³ª19 °ü·Ã È¦µù Ãß°¡ °øÁö</div>
+            <div class="inner-div"><span class="blueText">[ê³µì§€]</span>3ì°¨ ì½”ë¡œë‚˜19 ê´€ë ¨ í™€ë”© ì¶”ê°€ ê³µì§€</div>
                 <div class="date-div"> <span class="date">2020.12.08.</span></div>
         </div>
         </a>
 
-        <!-- 9¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 9ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div">
-            <div class="inner-div"><span class="blueText">[°øÁö]</span>ÄÚ·Î³ª19 »çÈ¸Àû °Å¸®µÎ±â·Î ÀÎÇÑ °í°´¼¾ÅÍ ¿î¿µ ¾È³»</div>
+            <div class="inner-div"><span class="blueText">[ê³µì§€]</span>ì½”ë¡œë‚˜19 ì‚¬íšŒì  ê±°ë¦¬ë‘ê¸°ë¡œ ì¸í•œ ê³ ê°ì„¼í„° ìš´ì˜ ì•ˆë‚´</div>
                 <div class="date-div"> <span class="date">2020.08.31.</span></div>
         </div>
         </a>
 
-        <!-- 10¹øÂ° div -->
-        <a href="../ljm/noticeDetail.html">
+        <!-- 10ë²ˆì§¸ div -->
+        <a href="../view/noticeDetail.jsp">
         <div class="div" id="last-div">
-            <div class="inner-div"><span class="blueText">[°øÁö]</span>2Â÷ ÄÚ·Î³ª19 °ü·Ã È¦µù Ãß°¡ °øÁö</div>
+            <div class="inner-div"><span class="blueText">[ê³µì§€]</span>2ì°¨ ì½”ë¡œë‚˜19 ê´€ë ¨ í™€ë”© ì¶”ê°€ ê³µì§€</div>
                 <div class="date-div"><span class="date">2020.08.28.</span></div>
         </div>
         </a>
 
-        <!-- ÇÏ´Ü ¹öÆ° -->
+        <!-- í•˜ë‹¨ ë²„íŠ¼ -->
         <!-- <form action="../cuj/noticeWrite.html"> -->
-            <a href="../cuj/noticeWrite.html">
+            <a href="../form/noticeWrite.jsp">
         <div class="button-div">
             <div class="main-button">
-                <button>±Û ÀÛ¼º</button>
+                <button>ê¸€ ìž‘ì„±</button>
                     </div>
                 <div>
             <!-- </form> -->
         </a >
 
-    </div> <!-- div container ´Ý´Â ÅÂ±×-->
+    </div> <!-- div container ë‹«ëŠ” íƒœê·¸-->
 </body>
 </html>

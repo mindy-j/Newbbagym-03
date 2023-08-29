@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="btn-container">
-            <button type="submit" value="수정" id="update" onclick="location.href='../cuj/noticeWrite.html'">수정</button>
+            <button type="submit" value="수정" id="update" onclick="location.href='../form/noticeWrite'">수정</button>
             <button type="submit" value="삭제" id="delete" onclick="confirm('정말 삭제하시겠습니까?')">삭제</button>
         </div>
     </div>
