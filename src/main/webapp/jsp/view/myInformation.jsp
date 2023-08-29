@@ -52,34 +52,7 @@
             </form>
         </div>
 
-        <div class="information-box">
-            <p class="information-title">상세 정보</p>
-            <form action="" class="information-form">
-                <ul class="information-ul">
-                    <li>
-                        <label class="information-label">성별  </label>
-                        <input type="text" class="information-input" value="남"/>
-                    </li>
-                    <li>
-                        <label class="information-label">나이 </label>
-                        <input type="text" class="information-input" value="25"/>
-                    </li>
-                    <li>
-                        <label class="information-label">관심지역 </label>
-                        <input type="text" class="information-input" value=""/>
-                    </li>
-                    <li>
-                        <label class="information-label">운동목적 </label>
-                        <input type="text" class="information-input" value=""/>  
-                    </li>
-                    
-                    <li>
-                        <label class="information-label">관심 운동 종목  </label>
-                        <input type="text" class="information-input" value=""/>
-                    </li>
-                </ul>
-            </form>
-        </div>
+        
 
         
             <div class="unregister-box">

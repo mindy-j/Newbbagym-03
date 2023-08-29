@@ -1,37 +1,37 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>·Î±×ÀÎ</title>
-    <link rel="stylesheet" href="css/adminLogin.css">
-    <link rel="icon" herf="../img/·Î°í.png">
+    <title>ë¡œê·¸ì¸</title>
+    <link rel="stylesheet" href="../../css/admin/adminLogin.css">
+    <link rel="icon" herf="../img/ë¡œê³ .png">
 </head>
 <body>
     <div class="container">
         <a href="/main/main.html">
-            <img src="../pmg/logo.png" class="logo">
+            <img src="../../img/ë¡œê³ .png" class="logo">
         </a>
-        <h2 class="admin_login_title">°ü¸®ÀÚ ·Î±×ÀÎ</h2>
+        <h2 class="admin_login_title">ê´€ë¦¬ìž ë¡œê·¸ì¸</h2>
         <hr>
         <form action="myPage.html">
             <div class="id-container">
-                <div class="id-text">¾ÆÀÌµð</div>
-                <input type="text" placeholder="¾ÆÀÌµð¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä." class="id" id="id">
+                <div class="id-text">ì•„ì´ë””</div>
+                <input type="text" placeholder="ì•„ì´ë””ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”." class="id" id="id">
             </div>
             <div class="pw-container">
-                <div class="pw-text">ºñ¹Ð¹øÈ£</div>
-                <input type="password" placeholder="¿µ¹®, ¼ýÀÚ Æ÷ÇÔ 6~20ÀÚ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä." class="pw" id="pw">
+                <div class="pw-text">ë¹„ë°€ë²ˆí˜¸</div>
+                <input type="password" placeholder="ì˜ë¬¸, ìˆ«ìž í¬í•¨ 6~20ìžë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”." class="pw" id="pw">
             </div>
-            <input type="submit" value="·Î±×ÀÎ" class="login-btn" id="login-btn" disabled>
+            <input type="submit" value="ë¡œê·¸ì¸" class="login-btn" id="login-btn" disabled>
         </form>
         
        
         <div class="terms-container">
             <div class="terms">
-                ÃÖÃÊ ·Î±×ÀÎ ½Ã ÀÌ¿ë¾à°ü°ú °³ÀÎÁ¤º¸ Ãë±Þ¹æÄ§, À§Ä¡±â¹Ý¼­ºñ½º ÀÌ¿ë¾à°ü¿¡ µ¿ÀÇÇÏ´Â °ÍÀ¸·Î °£ÁÖÇÕ´Ï´Ù.
+                ìµœì´ˆ ë¡œê·¸ì¸ ì‹œ ì´ìš©ì•½ê´€ê³¼ ê°œì¸ì •ë³´ ì·¨ê¸‰ë°©ì¹¨, ìœ„ì¹˜ê¸°ë°˜ì„œë¹„ìŠ¤ ì´ìš©ì•½ê´€ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼í•©ë‹ˆë‹¤.
             </div>
         </div>
     </div>
