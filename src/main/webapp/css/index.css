@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+  
+}
+a{
+    text-decoration: none;
+    color: #58595B;
+}
+html,body{
+    width:100%;
+    background-color: rgba(238, 235, 235,0.6);
+ 
+}
+
+#full_box{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 4%;
+}
+.header_full_box{
+    display: flex;
+    margin-bottom: 5px;
+}
+.header_nav{
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.header_nav input{
+    height: 35px;
+    border-radius: 10px;
+}
+/*헤더 끝*/
+
+/*메인 슬라이드 배너 시작*/
+.main_banner{
+    display: flex;
+    justify-content: center;
+   
+}
+.slides-wrap{
+    width: 1400px;
+    height: 250px;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 5px;
+    display: flex;  
+    overflow: hidden;
+    position: relative;
+    cursor:pointer;
+
+}
+.slide-box{
+    display: flex; 
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    position: absolute; 
+    left: 0px; 
+}
+li {
+    list-style: none;
+}
+
+.slide-img {
+    width: 1400px; /*slides-wrap 크기에 맞추기*/
+    height: 250px; /*slides-wrap 크기에 맞추기*/
+}
+li:first-child > .slide-img {
+    background-image: url(../img/mainImg/배너1.jpg);
+    background-repeat: no-repeat;
+    background-size: 95% 100%;
+}
+li:nth-child(2) > .slide-img {
+    background-image: url(../img/mainImg/배너2.jpg);
+    background-repeat: no-repeat;
+    background-size: 95% 100%;
+}
+li:last-child > .slide-img {
+    background-image: url(../img/mainImg/배너3.jpg);
+    background-repeat: no-repeat;
+    background-size: 95% 100%;
+}
+.prev,
+.next {
+    position: absolute;
+    font-size: 50px;
+    top: 120px;
+    line-height: 20px;
+    cursor: pointer;
+}
+    
+.prev {
+    left: 0px;
+    color:rgba(255,255,255,0.6);
+}
+.prev:hover {
+    left: 0px;
+    color:rgb(255,255,255);
+   
+}
+.next {
+    right: 0px;
+    color:rgba(255,255,255,0.6);
+}
+
+.next:hover {
+    right: 0px;
+    color:rgb(255,255,255);
+}
+
+/*검색창 css*/
+.input_div{
+    width: 97%;
+    border: 1px solid gray;
+    margin-top: 5px;
+    display: flex;
+    margin:0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+ 
+}
+.input_div input{
+    height: 35px;
+    width: 90%;
+    border: none;
+    margin-left: 5px;
+    
+}
+.search_img{
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+/*main css*/
+.main_full{
+    width: 98%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.main1{
+    width: 450px;
+    height: 100%;
+    background-image: url(../img/mainImg/내주변운동시설이미지.png);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bolder;
+    color: #58595B;
+
+    
+}
+.main2{
+    width: 450px;
+    height: 100%;
+    background-image: url(../img/mainImg/지도에서찾아보기.png);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 5px;
+    font-weight: bolder;
+     color: #58595B;
+
+}
+.m{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.under_icon_full{
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*수정부분*/
+.under_icon{    
+    text-align: center;
+    width: 200px;
+    height: 110px;
+    margin-left: 10px;
+    margin: 0 auto;
+    color: #58595B;
+}
+
+.under_icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.under_icon img:hover{
+    width: 105%;
+    height: 105%;   
+   
+}
+/*여기까지*/
+
+
+
+
+
+/*아래 배너 사진 긴거*/
+.long_img{
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'LINESeedKR-Bd';
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color:beige;
+    background-color:  rgb(127, 142, 251);;
+}
+
+.long_img img{
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+/*풋터*/
+.footer_full_div{
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    background-color: rgba(238, 235, 235,0.6);
+}
+.footer1{
+
+    height: 180px;
+    width: 50%;
+    margin-top: 20px;
+    margin: 10px;
+   
+}
+.name{
+    font-weight: bolder;
+    font-size: 15px !important;
+}
+.footer1 div{
+    color: #58595B;
+    font-size: 10px;
+}
+.personal{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.footer2{
+    height: 180px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.sns{
+   
+     height: 180px;
+     width: 35px;
+     margin: 20px;
+
+
+}
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}

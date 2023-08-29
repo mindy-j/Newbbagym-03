@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*전체박스 안에 넣으면 됩니다.*/
+/*헤더 시작*/
+a{
+    text-decoration: none;
+    color: #58595B;
+}
+*{
+    font-family: 'LINESeedKR-Bd';
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: rgba(238, 235, 235,0.6);
+}
+
+.header_full_box{
+    width:60%;
+     margin:0 auto;
+     background-color: white;
+     position:fixed;
+    padding-top:10px;
+    padding-bottom: 25px;
+    top:0;
+    left:20%;
+    z-index: 1;
+    border-bottom:1px solid rgba(238, 235, 235,0.7);
+
+}
+.header_full_box{
+    display: flex;
+}
+.header_nav{
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.header_nav input{
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+/*헤더 끝*/

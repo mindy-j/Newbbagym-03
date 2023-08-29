@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family: 'LINESeedKR-Bd';
+}
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+    width:100%;
+    background-color: rgba(238, 235, 235,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: rgba(238, 235, 235,0.6);
+}
+/*페이지 상단 이미지 들어가는 영역*/
+.img-container{
+    width: 100%;
+    height: 360px;
+}
+#main-img{
+    width: 100%;
+    height: 100%;
+}
+/**/
+
+pre{
+    width: 100%;
+    white-space: pre-wrap;/*pre 속성값과 동일하게 연속된 띄어쓰기와 들여쓰기, 줄바꿈을 있는 그대로 보존합니다*/
+    word-wrap: break-word;/*요소의 경계에서 break point가 아니어도 줄바꿈을 합니다.*/
+}
+
+
+
+/*시설명과 주소, 가격이 들어가는 영역*/
+.title-container{
+    width: 95%;
+    margin: 10px 0;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.addr-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+/**/
+
+/*내용이 들어가는 영역*/
+.content{
+    width: 90%;
+    background-color: rgba(238, 235, 235,0.6);
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 10px 0;
+}
+/**/
+
+/*공지사항이 들어가는 영역*/
+.subTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/**/
+.content,.notice-content,.time-content{
+    min-height: 50px;
+    line-height: 20px;
+}
+
+
+.sub-place{
+    width: 100%;
+    height: 450px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#place-img{
+    width: 75%;
+    height: 100%;
+}
+
+.btn-container{
+    width: 95%;
+    height: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.last-btn{
+    width: 100px;
+    height: 30px;
+    margin: 0 0 10px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#update{
+    background-color: rgb(127, 142, 251);
+    color: white;
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 5px;
+}
+#update:hover{
+    background-color: rgb(115, 131, 250);;
+}
+#delete{
+    background-color: rgb(245, 73, 73);
+    color: white;
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 5px;
+}
+#delete:hover{
+    background-color: rgb(245, 50, 50);
+}
+
+
+#comm-none{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.comments{
+    width: 97%;
+    border: 1px solid rgba(238, 235, 235,0.6);
+    margin-bottom: 8px;
+    position: relative;
+}
+#rm{
+    position: absolute;
+    top: 35%;
+    left: 92%;
+    display: none;
+}
+#ud-btn{
+    margin-right: 5px;
+    /* background-color: rgb(127, 142, 251);
+    color: white;
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 5px; */
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#rm-btn{
+    /* margin-right: 5px;
+    background-color: rgb(245, 73, 73);
+    color: white;
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 5px; */
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.com-container{
+    width: 100%;
+}
+#comm-btn{
+    margin: 0 0 5px 10px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#comments-btn{
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+.view-id{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+
+}
+.view-content{
+    min-height: 30px;
+    width: 100%;
+}
+.view-time{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.com-write{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#comment-write{
+    width: 95%;
+    min-height: 50px;
+}
+/* textarea:focus {outline: none;}클릭시 테투리를 제거 */
+textarea::placeholder{
+    line-height: 150px;
+}
+textarea{
+resize: none;/*모서리 하단에 크기를 조절하는 것을 막아줌*/
+border: 1px solid rgba(238, 235, 235,0.6);
+}
+.com-btn{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(127, 142, 251);
+    border: 1px solid rgba(238, 235, 235,0.6);
+    border-radius: 5px;/*테두리를 둥글게 설정*/
+    cursor: pointer;/*마우스 커서 포인트를 손가락모양으로 변경*/
+    margin-right: 5px;
+}
+#btn:hover{
+    background-color: rgb(115, 131, 250);/*hover를 이용하여 마우스 포인터가 이동했을 때 진한 색상으로 변경*/
+}
+
+#up{
+    display: none;
+}

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    font-family: 'LINESeedKR-Bd';
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: rgba(238, 235, 235,0.6);
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:60%;
+   height:100%;
+    margin:auto;
+    background-color: white;
+}
+.list-box{
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.list-content{
+    display: flex;
+    width:45%;
+    height: 140px; /*노트북, 컴퓨터 따라서 크기 조절해야함*/
+    margin:auto;
+    margin-top:20px;
+}
+.list-img-box{
+    display: flex;
+    width:40%;
+    height:100%;
+   border-radius: 20px;
+}
+.list-img{
+    width:100%;
+    height:100%;
+   border-radius: 20px;
+}
+.list-info{
+    width:60%;
+    height:100%;
+   margin-left: 12px;
+    padding:6px;
+}
+
+.gym-title{
+    font-size:16px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+}
+
+.gym-address{
+    font-size:13px;
+    color:rgb(114, 113, 113);
+    font-weight: bold;
+}
+.gym-category-box{
+    width:45px;
+    height:20px;
+    border: 1px solid rgba(182, 181, 181,0.6);
+    background-color: rgba(182, 181, 181,0.3);;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   margin-right:5px;
+   margin-top:18px;
+}
+.gym-category-box-sort{
+    display: flex;
+    
+}
+.input-form{
+    width:100%;
+    display: flex;
+    justify-content: end;
+   
+}
+.write-button{
+    margin-right:150px;
+    margin-top:50px;
+    width:70px;
+    height:30px;
+    background-color: rgb(127, 129, 255);
+    border:none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+}
+.write-button:hover{
+    margin-right:150px;
+    margin-top:50px;
+    width:70px;
+    height:30px;
+    background-color: rgba(127, 129, 255,0.7);
+    border:none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+}
+a{
+width:100%;
+height:100%;
+}
+/*가로 너비가 1200px 이하면 카테고리 박스는 사라짐*/
+@media (max-width:1200px) { 
+    .gym-category-box{
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
