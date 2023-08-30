@@ -4,13 +4,18 @@
 	margin:0;
 	padding:0;
 }
-body,html{
-	background-color: rgba(238, 235, 235,0.6);
-}
+
+
+html,body{
+    width:100%;
+    background-color: rgb(244, 243, 243);
+
+
 
 a{
 	 text-decoration: none;
 	 color: #58595B;
+
 }
 
 .footer_full_div{
