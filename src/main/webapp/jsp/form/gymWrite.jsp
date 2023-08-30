@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gymWrite</title>
     <link rel="stylesheet" href="../../css/form/gymWrite.css">
-    <link rel="icon" href="/img/로고.png">
+    <link rel="icon" href="http://localhost:8888/bbagym/img/로고.png">
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script defer src="../../js/form/gymWrite.js"></script>
 </head>
 <body>
-    <form><!--서버에 보내기 위해 form 태그를 사용함--> 
+<div class="all-container"> 
+    <form id="form" action="../view/gymList.jsp"><!--서버에 보내기 위해 form 태그를 사용함--> 
         <table><!--테이블 이용 10행, 2열의 표를 만듬-->
             <tr><!--tr은 하나의 행을 의미함-->
                 <th colspan="2">운동시설 등록</th><!--th 제목의 셀을 의미함, colspan=2는 2칸의 셀은 가로로 병합을 의미-->
@@ -87,6 +88,7 @@
         <!-- submit을 하면 작성했던 글들이 사라지는것을 방지하기 위함 -->
         </div>
     </form>
+  </div>
 <%@include file="../../footer.jsp" %>
 </body>
 </html>

@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gymDetaile</title>
     <link rel="stylesheet" href="../../css/view/gymDetaile.css">
-    <link rel="icon" href="/img/로고.png">
+    <link rel="icon" href="http://localhost:8888/bbagym/img/로고.png">
     <script src="https://kit.fontawesome.com/acf4f592bf.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f7b0b1985a949546c083ca5f1006cb88&libraries=services,clusterer,drawing"></script>
     <!-- 카카오API 맵을 이용하기 위해 KEY를 받아서 불러옴 -->
     <script defer src="../../js/view/gymDetaile.js"></script>
 </head>
 <body>
+<%@include file = "../../header.jsp" %>
     <div class="container">
         <div class="img-container"><img src="img_cuj/1.png" alt="" id="main-img"></div><!--메인 이미지를 담은 영역-->
         <div class="title-container"><!--제목 및 주소, 가격을 담을 div영역-->

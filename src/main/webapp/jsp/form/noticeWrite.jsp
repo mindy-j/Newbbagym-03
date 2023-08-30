@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>noticeWrite</title>
     <link rel="stylesheet" href="../../css/form/noticeWrite.css">    
-    <link rel="icon" href="/img/로고.png">
+    <link rel="icon" href="http://localhost:8888/bbagym/img/로고.png">
     <script defer src="../../js/form/noticeWrite.js"></script>
 </head>
 <body>
-    <form><!--서버에 보내기 위해 form 태그를 사용함--> 
+<%@include file = "../../header.jsp" %>
+<div class="container">
+    <form action="../view/announcement.jsp"><!--서버에 보내기 위해 form 태그를 사용함--> 
         <table><!--테이블 이용 10행, 2열의 표를 만듬-->
             <tr><!--tr은 하나의 행을 의미함-->
                 <th colspan="2">공지사항 등록</th><!--th 제목의 셀을 의미함, colspan=2는 2칸의 셀은 가로로 병합을 의미-->
@@ -35,5 +37,6 @@
         </div>
     </form>
 <%@include file="../../footer.jsp" %>
+</div>
 </body>
 </html>
