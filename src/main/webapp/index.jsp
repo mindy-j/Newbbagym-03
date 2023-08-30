@@ -23,7 +23,8 @@
             <div class="header_nav"><a href="jsp/form/search.jsp"><input type="text" placeholder=" 운동시설 검색"></a></div>
             <div class="header_nav"><a href="jsp/form/login.jsp">로그인</a></div>
             <div class="header_nav"><a href="jsp/form/joinAgree.jsp">회원가입</a></div>
-        </div><!--header-->
+        </div>
+        <!--header-->
     <div id="full_box"><!--전체 총 div-->
         <div class="main_banner"><!--banner-->
             <div class="slides-wrap">
