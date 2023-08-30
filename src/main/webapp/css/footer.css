@@ -4,6 +4,12 @@
 	margin:0;
 	padding:0;
 }
+
+html,body{
+    width:100%;
+    background-color: rgb(244, 243, 243);
+}
+
 .footer_full_div{
     /*margin-top: 20px;*/
     width:60%;
