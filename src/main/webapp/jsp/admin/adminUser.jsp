@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Ø¿˙∞¸∏Æ</title>
+    <title>Ïú†Ï†ÄÍ¥ÄÎ¶¨</title>
  <link rel="stylesheet" href="../../css/admin/adminUser.css"/>
- <link rel="icon" href="../img/∑Œ∞Ì.png">
+ <link rel="icon" href="../img/Î°úÍ≥†.png">
  <link rel="stylesheet" href="../../css/admin/adminHeader.css"/>
 </head>
 <body>
@@ -15,8 +15,8 @@
         <ul class="admin_header_ul">
             <li>
                     <div class="admin_header_category">
-                        <a href="admin_board.html">
-                            ∞‘Ω√∆«∞¸∏Æ
+                        <a href="adminBoard.jsp">
+                            Í≤åÏãúÌåêÍ¥ÄÎ¶¨
                         </a>
                     </div>
                 
@@ -24,26 +24,26 @@
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="admin_user.html">
-                        »∏ø¯∞¸∏Æ
+                    <a href="adminUser.jsp">
+                        ÌöåÏõêÍ¥ÄÎ¶¨
                     </a>
                 </div>
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="admin_notice.html">
-                        ∞¯¡ˆªÁ«◊ ∞¸∏Æ
+                    <a href="adminNotice.jsp">
+                        Í≥µÏßÄÏÇ¨Ìï≠ Í¥ÄÎ¶¨
                     </a>
                 </div>
             </li>
         </ul>
     </div>
-        <!--ø©±‚±Ó¡ˆ admin_header-->
+        <!--Ïó¨Í∏∞ÍπåÏßÄ admin_header-->
         
         
         <div class="container">
             <div class="title-container">
-                <h2>»∏ø¯∞¸∏Æ</h2>
+                <h2>ÌöåÏõêÍ¥ÄÎ¶¨</h2>
             </div>
             
            
@@ -51,208 +51,208 @@
             <br>
             <div class="user-info-container">
                 <table border="1">
-                    <th>π¯»£</th>
-                    <th class="name">¿Ã∏ß</th>
-                    <th class="id">æ∆¿Ãµ</th>
-                    <th class="pw">∆–Ω∫øˆµÂ</th>
-                    <th class="phone">«⁄µÂ∆˘π¯»£</th>
-                    <th colspan="2">±∏∫–</th>
+                    <th>Î≤àÌò∏</th>
+                    <th class="name">Ïù¥Î¶Ñ</th>
+                    <th class="id">ÏïÑÏù¥Îîî</th>
+                    <th class="pw">Ìå®Ïä§ÏõåÎìú</th>
+                    <th class="phone">Ìï∏ÎìúÌè∞Î≤àÌò∏</th>
+                    <th colspan="2">Íµ¨Î∂Ñ</th>
                     
-                    <tr><!-- √ππ¯¬∞ ¡Ÿ Ω√¿€ -->
+                    <tr><!-- Ï≤´Î≤àÏß∏ Ï§Ñ ÏãúÏûë -->
                         <td>1</td>
-                        <td >¿Ã¡æπŒ</td>
+                        <td >Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
-                    </tr><!-- √ππ¯¬∞ ¡Ÿ ≥° -->
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
+                    </tr><!-- Ï≤´Î≤àÏß∏ Ï§Ñ ÎÅù -->
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
                    
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
                   
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
-                    </tr>
-        
-                    
-                    <tr>
-                        <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
-                        <td>flower@naver.com</td>
-                        <td>12345678</td>
-                        <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
                     
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
+                    </tr>
+        
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
+                        <td>flower@naver.com</td>
+                        <td>12345678</td>
+                        <td>010-1234-1234</td>
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
         
         
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>¿Ã¡æπŒ</td>
+                        <td>Ïù¥Ï¢ÖÎØº</td>
                         <td>flower@naver.com</td>
                         <td>12345678</td>
                         <td>010-1234-1234</td>
-                        <td>¿œπ›</td>
-                        <td><button onclick="confirm('¡§∏ª ªË¡¶«œΩ√∞⁄Ω¿¥œ±Ó?')">ªË¡¶</button></td>   
+                        <td>ÏùºÎ∞ò</td>
+                        <td><button onclick="confirm('Ï†ïÎßê ÏÇ≠Ï†úÌïòÏãúÍ≤†ÏäµÎãàÍπå?')">ÏÇ≠Ï†ú</button></td>   
                     </tr>
                   
                     
@@ -262,7 +262,7 @@
             
 
     </div>
-    <!--∆‰¿Ã¬° √≥∏Æ «ÿæﬂ«œ∞Ì, «— ∆‰¿Ã¡ˆø° 20∏Ì¿« ¡§∫∏-->
+    <!--ÌéòÏù¥Ïßï Ï≤òÎ¶¨ Ìï¥ÏïºÌïòÍ≥†, Ìïú ÌéòÏù¥ÏßÄÏóê 20Î™ÖÏùò Ï†ïÎ≥¥-->
     
 </body>
 </html>

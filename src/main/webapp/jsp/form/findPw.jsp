@@ -8,7 +8,7 @@
     <title>비밀번호 찾기</title>
     <link rel="stylesheet" href="../../css/form/findPw.css">    
     <script src="../../js/form/findPw.js"></script>
-    <link rel="icon" herf="/img/로고.png">
+    <link rel="icon" herf="../../img/로고.png">
 </head>
 <body>
     <div class="container">
@@ -16,7 +16,7 @@
             <p>비밀번호를 잊으셨나요?</p>
             <p>이름, 아이디, 이메일을 입력해 주세요.</p>
         </h2>
-        <form action="login.html">
+        <form action="">
             <div class="name-container">
                 <div class="name-text">이름</div>
                 <input type="text" placeholder="이름을 입력해 주세요." class="name" id="name">
