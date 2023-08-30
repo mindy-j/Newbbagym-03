@@ -110,18 +110,18 @@
             <div class="footer2"><!--footer div2-->
                 <div class="sns">
                     <a href="https://blog.naver.com/PostList.naver?blogId=cdwcgw1" target="_blank">
-                        <img src="img/mainImg/네이버블로그.png" width="32" height="32">
+                        <img src="img/네이버블로그.png" width="32" height="32">
                     </a>
 
                 </div>
                 <div class="sns">
                     <a href="https://www.instagram.com/dagym_app" target="_blank">
-                        <img src="img/mainImg/인스타.png" width="32" height="32">
+                        <img src="img/인스타.png" width="32" height="32">
                     </a>
                 </div>
                 <div class="sns">
                     <a href="https://www.facebook.com/dagym0101" target="_blank">
-                        <img src="img/mainImg/페이스북.png" width="32" height="32">
+                        <img src="img/페이스북.png" width="32" height="32">
                     </a>
                 </div>
             </div>
