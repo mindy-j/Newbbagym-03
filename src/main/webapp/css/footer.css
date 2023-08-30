@@ -5,9 +5,17 @@
 	padding:0;
 }
 
+
 html,body{
     width:100%;
     background-color: rgb(244, 243, 243);
+
+
+
+a{
+	 text-decoration: none;
+	 color: #58595B;
+
 }
 
 .footer_full_div{

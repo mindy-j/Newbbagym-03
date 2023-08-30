@@ -1,24 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À¯Àú°ü¸®</title>
- <link rel="stylesheet" href="css/admin_board.css"/>
- <link rel="stylesheet" href="css/admin_header.css"/>
- <link rel="icon" href="../img/·Î°í.png">
+    <title>ìœ ì €ê´€ë¦¬</title>
+ <link rel="stylesheet" href="../../css/admin/adminBoard.css"/>
+ <link rel="stylesheet" href="../../css/admin/adminHeader.css"/>
+ <link rel="icon" href="../img/ë¡œê³ .png">
 
 </head>
 <body>
-    <!--ÆäÀÌÂ¡ Ã³¸® ÇØ¾ßÇÏ°í, ÇÑ ÆäÀÌÁö¿¡ 20¸íÀÇ Á¤º¸-->
+    <!--íŽ˜ì´ì§• ì²˜ë¦¬ í•´ì•¼í•˜ê³ , í•œ íŽ˜ì´ì§€ì— 20ëª…ì˜ ì •ë³´-->
     <div class="admin_header">
         <ul class="admin_header_ul">
             <li>
                     <div class="admin_header_category">
-                        <a href="admin_board.html">
-                            °Ô½ÃÆÇ°ü¸®
+                        <a href="adminBoard.jsp">
+                            ê²Œì‹œíŒê´€ë¦¬
                         </a>
                     </div>
                 
@@ -26,15 +26,15 @@
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="admin_user.html">
-                        È¸¿ø°ü¸®
+                    <a href="adminUser.jsp">
+                        íšŒì›ê´€ë¦¬
                     </a>
                 </div>
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="admin_notice.html">
-                        °øÁö»çÇ× °ü¸®
+                    <a href="adminNotice.jsp">
+                        ê³µì§€ì‚¬í•­ ê´€ë¦¬
                     </a>
                 </div>
             </li>
@@ -43,7 +43,7 @@
     <div class="container">
         
         <div class="title-container">
-            <h2>°Ô½ÃÆÇ °ü¸®</h2>
+            <h2>ê²Œì‹œíŒ ê´€ë¦¬</h2>
         </div>
         
        
@@ -51,20 +51,20 @@
         <br>
         <div class="user-info-container">
             <table border="1">
-                <th class="board_number">¹øÈ£</th>
-                <th class="writer_name">ÀÛ¼ºÀÚ</th>
-                <th class="board_title">½Ã¼³ÀÌ¸§</th>
-                <th class="board_content">³»¿ë</th>
-                <th colspan="1">»èÁ¦</th>
+                <th class="board_number">ë²ˆí˜¸</th>
+                <th class="writer_name">ìž‘ì„±ìž</th>
+                <th class="board_title">ì‹œì„¤ì´ë¦„</th>
+                <th class="board_content">ë‚´ìš©</th>
+                <th colspan="1">ì‚­ì œ</th>
                 
-                <tr><!-- Ã¹¹øÂ° ÁÙ ½ÃÀÛ -->
+                <tr><!-- ì²«ë²ˆì§¸ ì¤„ ì‹œìž‘ -->
                     <td>1</td>
-                    <td>ÀÌÁ¾¹Î</td>
-                    <td>ÁßÈ­ º¹½Ì Ã¼À°°ü</td>
-                    <td><a href="../cuj/gymDetaile.html">¿Ö ÁßÈ­º¹½ÌÃ¼À°°üÀ» ´Ù³à¾ßÇÒ±î¿ä?</a>
+                    <td>ì´ì¢…ë¯¼</td>
+                    <td>ì¤‘í™” ë³µì‹± ì²´ìœ¡ê´€</td>
+                    <td><a href="../view/gymDetaile.jsp">ì™œ ì¤‘í™”ë³µì‹±ì²´ìœ¡ê´€ì„ ë‹¤ë…€ì•¼í• ê¹Œìš”?</a>
                         </td>
-                    <td><button onclick="confirm('Á¤¸» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?')">»èÁ¦</button></td>   
-                </tr><!-- Ã¹¹øÂ° ÁÙ ³¡ -->
+                    <td><button onclick="confirm('ì •ë§ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?')">ì‚­ì œ</button></td>   
+                </tr><!-- ì²«ë²ˆì§¸ ì¤„ ë -->
              
                 
                 

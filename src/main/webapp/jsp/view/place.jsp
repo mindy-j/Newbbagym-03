@@ -11,10 +11,11 @@
     <script src="https://kit.fontawesome.com/acf4f592bf.js" crossorigin="anonymous"></script>
     <script defer src="../../js/view/place.js"></script>
     <link rel="stylesheet" href="../../css/view/place.css">    
-    <link rel="icon" href="/img/로고.png">
+    <link rel="icon" href="http://localhost:8888/bbagym/img/로고.png">
     <title>place</title>
 </head>
 <body>
+<%@include file = "../../header.jsp" %>
     <div class="container">
         <div class="addr-container">
             <!-- <div class="addr">&nbsp;서울특별시 노원구 상계동</div> -->
