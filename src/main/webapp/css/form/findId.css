@@ -6,7 +6,7 @@
 
 html,body{
     width: 100%;
-    background-color: rgba(238, 235, 235, 0.6);
+    background-color: rgb(244, 243, 243);
 }
 
 .container{
@@ -43,7 +43,7 @@ h2{
 }
 .name,.email{
     width: 92%;
-    background-color: rgba(238, 235, 235, 0.6);
+    background-color: rgb(244, 243, 243);
     border: 1px solid gainsboro;
 }
 .find-id-btn{
