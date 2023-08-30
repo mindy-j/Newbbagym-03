@@ -6,7 +6,7 @@
 
 html,body{
     width: 100%;
-    background-color: rgba(238, 235, 235, 0.6);
+    background-color: rgb(244, 243, 243);
 }
 
 .a-tag{
@@ -48,7 +48,7 @@ html,body{
 .menu-container{
     margin: 0 2% 0 2%;
     padding: 2% 0 2% 0;
-    border-bottom: 1px solid rgba(238, 235, 235, 0.6);
+    border-bottom: 1px solid rgb(244, 243, 243);
 }
 
 .ad{

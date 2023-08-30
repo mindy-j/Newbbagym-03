@@ -36,7 +36,7 @@
             <a href="faq.jsp" class="a-tag">FAQ</a>
         </div>
         <div class="menu-container">
-            <a href="../form/gymWrite.jsp"  class="a-tag">시설등록</a>
+            <a href="../form/gymWrite.jsp" class="a-tag">시설등록</a>
         </div>
         <!-- <div class="menu-container">
             <a href="">설정</a>
