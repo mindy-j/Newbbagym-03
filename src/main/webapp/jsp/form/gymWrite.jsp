@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="all-container"> 
-    <form id="form" action="../view/gymList.jsp"><!--서버에 보내기 위해 form 태그를 사용함--> 
+    <form id="form" action="gymWrite.bo" method ="post"><!--서버에 보내기 위해 form 태그를 사용함--> 
         <table><!--테이블 이용 10행, 2열의 표를 만듬-->
             <tr><!--tr은 하나의 행을 의미함-->
                 <th colspan="2">운동시설 등록</th><!--th 제목의 셀을 의미함, colspan=2는 2칸의 셀은 가로로 병합을 의미-->
