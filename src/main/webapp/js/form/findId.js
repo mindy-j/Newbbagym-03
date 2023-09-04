@@ -20,3 +20,25 @@ function activeEvent() {
         findIdBtn.disabled = true;
     }
 }
+
+
+var bUser = document.getElementById("registrant");
+var loginForm = document.getElementById("findForm");
+var user = document.getElementById("common");
+
+bUser.addEventListener('click',function(){
+   console.log('click');
+   if(bUser.checked){
+      loginForm.action = "/bbagym/BusinessFindId.bu";
+   }else{
+      loginForm.action = "/bbagym/findIdOk.us";
+   }
+});
+
+user.addEventListener('click',function(){
+   if(user.checked){
+      loginForm.action = "/bbagym/findIdOk.us";
+   }else{
+      loginForm.action = "/bbagym/BusinessFindId.bu";
+   }
+});

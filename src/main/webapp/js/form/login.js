@@ -16,3 +16,28 @@ function activeEvent() {
         loginBtn.disabled = true;
     }
 }
+
+
+
+var bUser = document.getElementById("registrant");
+var loginForm = document.getElementById("loginForm");
+var user = document.getElementById("common");
+
+bUser.addEventListener('click',function(){
+   console.log('click');
+   if(bUser.checked){
+      loginForm.action = "businessLoginOk.bu";
+   }else{
+      loginForm.action = "loginOk.us";
+   }
+});
+
+user.addEventListener('click',function(){
+   if(user.checked){
+      loginForm.action = "loginOk.us";
+   }else{
+      loginForm.action = "businessLoginOk.bu";
+   }
+});
+
+

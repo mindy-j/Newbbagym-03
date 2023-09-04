@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="admin">
+   <!-- 일반회원관리 -->
+   <select id="selUser" parameterType="UserDTO" resultType="UserDTO">
+      select user_name, user_id, user_pw, user_phone from tbl_user
+   </select>
+   <delete id="delUser" parameterType="UserDTO">
+      delete from tbl_user where user_id = #{userId}
+   </delete>
+   
+   <!-- 시설등록자관리 -->
+   <select id="selBusinessUser" parameterType="BusinessUserDTO" resultType="BusinessUserDTO">
+      select business_user_name, business_user_id, business_user_pw, business_user_phone, business_num
+      from tbl_business_user
+   </select>
+   <delete id="delBusinessUser" parameterType="BusinessUserDTO">
+      delete from tbl_business_user where business_user_id = #{businessUserId}
+   </delete>
+   
+   <!-- 운동시설(게시판)관리 -->
+   <select id="selBoard" parameterType="BoardVO" resultType="BoardVO">
+      select u.business_user_name, b.board_num, b.board_name, b.board_address
+      from tbl_business_user u inner join tbl_board b
+      on u.business_user_num = b.business_user_num
+   </select>
+   <delete id="delBoard" parameterType="BoardVO">
+      delete from tbl_board where board_num = #{boardNum}
+   </delete>
+</mapper>

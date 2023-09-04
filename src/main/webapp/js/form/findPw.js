@@ -22,3 +22,24 @@ function activeEvent() {
         findPwBtn.disabled = true;
     }
 }
+
+var bUser = document.getElementById("registrant");
+var loginForm = document.getElementById("findForm");
+var user = document.getElementById("common");
+
+bUser.addEventListener('click',function(){
+   console.log('click');
+   if(bUser.checked){
+      loginForm.action = "/bbagym/BusinessFindPw.bu";
+   }else{
+      loginForm.action = "/bbagym/findPwOk.us";
+   }
+});
+
+user.addEventListener('click',function(){
+   if(user.checked){
+      loginForm.action = "/bbagym/findPwOk.us";
+   }else{
+      loginForm.action = "/bbagym/BusinessFindPw.bu";
+   }
+});

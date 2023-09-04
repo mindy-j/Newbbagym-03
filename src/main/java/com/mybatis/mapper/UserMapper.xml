@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+   <insert id = "join" parameterType="UserDTO">
+        INSERT INTO tbl_user(user_name, user_email, user_id, user_pw, user_phone, admin_num)
+      VALUES(#{userName}, #{userEmail}, #{userId}, #{userPw}, #{userPhone}, 1)
+   </insert>
+   <update id="boardUpdate" parameterType="BoardDTO">
+   	update tbl_board set board_name = #{boardName},board_address=#{boardAddress},board_price=#{boardPrice},board_content = #{boardContent} ,board_notice=#{boardNotice},board_time=#{boardTime},board_category=#{boardCategory},image_name=#{imageName}
+		where notice_num = #{noticeNum}
+   </update>
+   <select id = "login" parameterType="UserDTO" resultType="UserDTO">
+        select * from tbl_user where user_id = #{userId} and user_pw = #{userPw}
+   </select>
+   
+   <delete id="delete" parameterType="UserDTO">
+         delete from tbl_user where user_id = #{userId}
+   </delete>
+   
+   <select id = "findId" parameterType="UserDTO" resultType="UserDTO">
+        select * from tbl_user where user_name = #{userName} and user_email = #{userEmail}
+   </select>
+   
+   <select id = "findPw" parameterType="UserDTO" resultType="UserDTO">
+        select * from tbl_user where user_name = #{userName} and user_email = #{userEmail} and user_id = #{userPw}
+   </select>
+   
+    <!-- 중복검사 쿼리 -->
+   <select id="checkId" parameterType="java.lang.String" resultType="java.lang.Integer">
+      select count(user_num) from tbl_user where user_id = #{userId}
+   </select>
+   
+      <update id="update" parameterType="UserDTO">
+         update tbl_user set user_name = #{userName}, user_email = #{userEmail}, user_id = #{userId}, user_pw = #{userPw}, user_phone = #{userPhone}
+         where user_id = #{userId}
+   </update>
+   
+</mapper>

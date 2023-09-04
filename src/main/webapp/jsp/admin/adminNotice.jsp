@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
         <ul class="admin_header_ul">
             <li>
                     <div class="admin_header_category">
-                        <a href="adminBoard.jsp">
+                        <a href="selBoardOk.me">
                             게시판관리
                         </a>
                     </div>
@@ -25,14 +26,14 @@
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="adminUser.jsp">
+                    <a href="adminUser.me">
                         회원관리
                     </a>
                 </div>
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="adminNotice.jsp">
+                    <a href="adminNotice.me">
                         공지사항 관리
                     </a>
                 </div>
@@ -45,98 +46,67 @@
             <h2>공지</h2>
         </div>
         
+        
+        <c:choose>
+             <c:when test = "${not empty noticeBoardList}">
+              <c:forEach var="noticeBoard" items="${noticeBoardList}">
+              
+              	<a href="noticeBoardDetail.me?noticeNum=${noticeBoard.getNoticeNum()}">
+		            <div class="div">
+		                <div class="inner-div">
+			                <span class="blueText">[공지]</span>
+			                <c:out value = "${noticeBoard.getNoticeTitle()}"/>
+		                </div>
+		                <div class="date-div">
+			                <span class="date">
+			                <c:out value = "${noticeBoard.getNoticeDate()}"/>
+		                </span>
+		                </div>
+		            </div>
+       			 </a>
+         	</c:forEach>
+           </c:when>
+         </c:choose>
+        
         <!-- 1번째 div -->
-        <a href="../view/noticeDetail.jsp">
-            <div class="div">
-                <div class="inner-div"><span class="blueText">[공지]</span>다짐보다 싸면 100% 전액 환불!</div>
-                <div class="date-div"><span class="date">2021.04.09.</span></div>
-            </div>
-        </a>
+        <div class="pagination">
+        <ul>
+          <!-- ========== 페이징 처리 예시 ============ -->
+          
+          <c:if test="${prev}">
+          <li><a href="${pageContext.servletContext.contextPath}/jsp/admin/adminNotice.me?page=${startPage-1}" class="prev">&lt;</a></li>
+          </c:if>
+          <c:forEach begin="${startPage}" end="${endPage}" var="i">
+          	<li>
+          		<c:if test="${page == i}">
+          			<a href="${pageContext.servletContext.contextPath}/jsp/admin/adminNotice.me?page=${i}" class="active">${i}</a>
+          		</c:if>
+          		<c:if test="${page != i}">
+          			<a href="${pageContext.servletContext.contextPath}/jsp/admin/adminNotice.me?page=${i}">${i}</a>
+          		</c:if>
+          	</li>
+          </c:forEach>
+          <c:if test="${next}">
+          	<li><a href="${pageContext.servletContext.contextPath}/jsp/admin/adminNotice.me?page=${endPage+1}" class="next">&gt;</a></li>
+          </c:if>
+          <!-- ========== /페이징 처리 예시 ============ -->
+        </ul>
+      </div>
 
-        <!-- 2번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div"><span class="blueText">[공지]</span>3차 코로나19 관련 홀딩 추가 공지</div>
-            <div class="date-div"><span class="date">2020.12.08.</span></div>
-        </div>
-        </a>
-
-        <!-- 3번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div">
-                <span class="blueText">[공지]</span>코로나19 사회적 거리두기로 인한 고객센터 운영 안내</div>
-                <div class="date-div"><span class="date">2020.08.31.</span></div>
-        </div>
-        </a>
-
-        <!-- 4번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div"><span class="blueText">[공지]</span>2차 코로나19 관련 홀딩 추가 공지</div>
-            <div class="date-div"> <span class="date">2020.08.28.</span></div>
-        </div>
-        </a>
-
-        <!-- 5번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div">
-                <span class="blueText">[공지]</span>코로나19 관련 홀딩 및 시작일 연기 제공 종료</div>
-            <div class="date-div"> <span class="date">2020.05.06.</span></div>
-        </div>
-        </a>
-
-        <!-- 6번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div"><span class="blueText">[공지]</span>코로나19 정부 지침 관련 운동기간 연장안내</div>
-                <div class="date-div"><span class="date">2020.03.24.</span></div>
-        </div>
-        </a>
-
-        <!-- 7번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div"><span class="blueText">[공지]</span>다짐보다 싸면 100% 전액 환불!</div>
-                <div class="date-div"> <span class="date">2021.04.09.</span></div>
-        </div>
-        </a>
-
-        <!-- 8번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div"><span class="blueText">[공지]</span>3차 코로나19 관련 홀딩 추가 공지</div>
-                <div class="date-div"> <span class="date">2020.12.08.</span></div>
-        </div>
-        </a>
-
-        <!-- 9번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div">
-            <div class="inner-div"><span class="blueText">[공지]</span>코로나19 사회적 거리두기로 인한 고객센터 운영 안내</div>
-                <div class="date-div"> <span class="date">2020.08.31.</span></div>
-        </div>
-        </a>
-
-        <!-- 10번째 div -->
-        <a href="../view/noticeDetail.jsp">
-        <div class="div" id="last-div">
-            <div class="inner-div"><span class="blueText">[공지]</span>2차 코로나19 관련 홀딩 추가 공지</div>
-                <div class="date-div"><span class="date">2020.08.28.</span></div>
-        </div>
-        </a>
+        
 
         <!-- 하단 버튼 -->
         <!-- <form action="../cuj/noticeWrite.html"> -->
-            <a href="../form/noticeWrite.jsp">
+            <a href="../admin/noticeWrite.jsp">
         <div class="button-div">
             <div class="main-button">
                 <button>글 작성</button>
                     </div>
                 <div>
             <!-- </form> -->
-        </a >
+        </a>
+        
+        
 
     </div> <!-- div container 닫는 태그-->
 </body>

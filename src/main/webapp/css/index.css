@@ -137,7 +137,20 @@ li:last-child > .slide-img {
     margin-left: 40px;
     margin-top: 5px;
 }
+#new-div{
+   color: #58595B;
+   font-weight: bolder;
+}
 
+#new-btn{
+   width:80px;
+   border:none;
+    background-color: white;    
+    cursor: pointer;
+    color: #58595B;
+    font-weight: bolder;
+    
+}
 /*main css*/
 .main_full{
     width: 98%;

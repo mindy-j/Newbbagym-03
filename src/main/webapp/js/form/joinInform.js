@@ -57,3 +57,24 @@ function activeEvent() {
         }
     }
 }
+
+
+
+var bUser = document.getElementById("registrant");
+var loginForm = document.getElementById("joinForm");
+var user = document.getElementById("common");
+
+bUser.addEventListener('click',function(){
+   console.log('click');
+   if(bUser.checked){
+      loginForm.action = "businessJoinOk.bu";
+   }
+});
+
+user.addEventListener('click',function(){
+   if(user.checked){
+      loginForm.action = "joinOk.us";
+   }
+});
+
+

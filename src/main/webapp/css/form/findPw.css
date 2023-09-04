@@ -28,8 +28,11 @@ h2{
     padding: 10px 0 0 2%;
     font-size: 15px;
 }
+.name-container{
+   margin-top:50px;
+}
 .name-text{
-    margin: 50px 0 0 0;
+    margin: 5px 0 0 0;
 }
 .name,.id,.email,.find-pw-btn{
     height: 50px;
@@ -72,4 +75,7 @@ h2{
 }
 .show{
     display: none;
+}
+.name{
+   align-items:center;
 }

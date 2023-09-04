@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="businessUser">
+   <insert id = "buJoin" parameterType="BusinessUserDTO">
+        INSERT INTO tbl_business_user(business_user_name, business_user_email, business_user_id, business_user_pw, business_user_phone,business_num, admin_num)
+      VALUES(#{businessUserName}, #{businessUserEmail}, #{businessUserId}, #{businessUserPw}, #{businessUserPhone},#{businessNum}, 1)
+   </insert>
+   
+    <select id = "buLogin" parameterType="BusinessUserDTO" resultType="BusinessUserDTO">
+        select * from tbl_business_user where business_user_id = #{businessUserId} and business_user_pw = #{businessUserPw}
+      </select>
+      
+      <delete id="buDelete" parameterType="BusinessUserDTO">
+         delete from tbl_business_user where business_user_id = #{businessUserId}
+      </delete>
+      
+      <select id = "buFindId" parameterType="BusinessUserDTO" resultType="BusinessUserDTO">
+        select * from tbl_business_user where business_user_name = #{businessUserName} and business_user_email = #{businessUserEmail}
+      </select>
+      
+      <select id = "buFindPw" parameterType="BusinessUserDTO" resultType="BusinessUserDTO">
+        select * from tbl_business_user where business_user_name = #{businessUserName} and business_user_email = #{businessUserEmail} and business_user_id = #{businessUserId}
+      </select>
+      
+   <!-- 중복검사 쿼리 -->
+   <select id="buCheckId" parameterType="java.lang.String" resultType="java.lang.Integer">
+      select count(business_user_num) from tbl_business_user where business_user_id = #{BusinessUserId}
+   </select>
+   
+      <update id="buUpdate" parameterType="UserDTO">
+         update tbl_business_user set business_user_name = #{businessUserName}, business_user_email = #{businessUserEmail}, business_user_id = #{businessUserId}, business_user_pw = #{businessUserPw}, business_user_phone = #{businessUserPhone}
+         where business_user_id = #{businessUserId}
+   </update>
+
+   
+</mapper>
