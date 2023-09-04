@@ -10,7 +10,7 @@ var content = document.getElementById("content");
 var notice = document.getElementById("notice");
 var time = document.getElementById("time");
 var button = document.getElementById("btn");
-var check = document.querySelectorAll("input[type='checkbox']");
+
 // 글을 담을 변수 선언, alert창이 나오고 작성했던 글들이 사라지지 않게 하기 위함
 var saveTitle = "";
 var savePhoto = "";
@@ -94,12 +94,9 @@ function sample6_execDaumPostcode() {
 //버튼을 눌렀을 때 내용이 비어져 있을면 경고창으로 알림
 button.addEventListener('click',function(){
 
-    var checkedCount = 0;//체크박스가 선택한 수를 담을 변수
-    for (var i = 0; i < check.length; i++) {
-        if (check[i].checked) {//체크박스에 선택을 했을 경우
-            checkedCount++;//수를 증가
-        }
-    }
+
+  
+    
 
     if(saveTitle === ""){
         alert('시설명을 입력해주세요');
@@ -109,8 +106,6 @@ button.addEventListener('click',function(){
         alert('주소를 입력해주세요')
     }else if(savePrice === ""){
         alert('가격을 입력해주세요')
-    }else if (checkedCount === 0) {
-        alert("최소한 한 개 이상의 체크박스를 선택하세요.");
     }else if(saveContent === ""){
         alert('내용을 입력해주세요')
     }else if(saveNotice === ""){

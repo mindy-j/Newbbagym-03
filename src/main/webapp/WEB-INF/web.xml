@@ -9,4 +9,42 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>admin</servlet-name>
+  	<servlet-class>com.bbagym.app.admin.AdminFrontController</servlet-class>
+  </servlet> 
+  <servlet>
+  	<servlet-name>board</servlet-name>
+  	<servlet-class>com.bbagym.app.board.BoardFrontController</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>admin</servlet-name>
+  	<url-pattern>*.me</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+  	<servlet-name>board</servlet-name>
+  	<url-pattern>*.bo</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+     <servlet-name>User</servlet-name>
+     <servlet-class>com.bbagym.app.user.UserFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>User</servlet-name>
+     <url-pattern>*.us</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>BusinessUser</servlet-name>
+     <servlet-class>com.bbagym.app.businessUser.BusinessUserFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>BusinessUser</servlet-name>
+     <url-pattern>*.bu</url-pattern>
+  </servlet-mapping>
 </web-app>

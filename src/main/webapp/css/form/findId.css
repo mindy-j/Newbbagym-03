@@ -73,3 +73,6 @@ h2{
 .show{
     display: none;
 }
+.name{
+   align-items:center;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="notice">
+	<insert id="noticeBoardWrite" parameterType="NoticeBoardDTO">
+		insert into tbl_notice(notice_title,notice_content)
+		value(#{noticeTitle},#{noticeContent})
+	</insert>
+	
+	<select id="noticeBoardList" resultType="NoticeBoardDTO" parameterType="map">
+		select notice_num,notice_title,notice_date
+		from tbl_notice 
+		order by notice_date desc 
+		limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="noticeBoardDetail" resultType="NoticeBoardDTO">
+		select notice_num,notice_title,notice_content,notice_date
+		from tbl_notice where notice_num = #{noticeNum}
+	</select>
+	
+	<update id="noticeBoardUpdate" parameterType="NoticeBoardDTO">
+		update tbl_notice set notice_title = #{noticeTitle} , notice_content = #{noticeContent} 
+		where notice_num = #{noticeNum} 
+	</update>
+	
+	<delete id="noticeBoardDelete">
+		delete from tbl_notice where notice_num = #{noticeNum}
+	</delete>
+	
+	<select id="getTotal" resultType="_int">
+		select count(notice_num) from tbl_notice
+	</select>
+</mapper>

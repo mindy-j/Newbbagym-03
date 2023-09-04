@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" href="../../css/admin/adminLogin.css">
-    <link rel="icon" herf="../img/로고.png">
+    <link rel="icon" href="../img/로고.png">
 </head>
 <body>
     <div class="container">
@@ -16,18 +16,17 @@
         </a>
         <h2 class="admin_login_title">관리자 로그인</h2>
         <hr>
-        <form action="myPage.html">
+        <form action="adminLogin.me">
             <div class="id-container">
                 <div class="id-text">아이디</div>
-                <input type="text" placeholder="아이디를 입력해 주세요." class="id" id="id">
+                <input type="text" placeholder="아이디를 입력해 주세요." class="id" name="adminId" id="id">
             </div>
             <div class="pw-container">
                 <div class="pw-text">비밀번호</div>
-                <input type="password" placeholder="영문, 숫자 포함 6~20자를 입력해 주세요." class="pw" id="pw">
+                <input type="password" name="adminPassword" placeholder="영문, 숫자 포함 6~20자를 입력해 주세요." class="pw" id="pw">
             </div>
-            <input type="submit" value="로그인" class="login-btn" id="login-btn" disabled>
+            <input type="submit" value="로그인" class="login-btn" id="login-btn">
         </form>
-        
        
         <div class="terms-container">
             <div class="terms">

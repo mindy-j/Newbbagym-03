@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="comment">
+	<insert id="userCommentWrite" parameterType="CommentDTO" >
+		insert into tbl_comment(comment_content,board_num,user_num,admin_num)
+		 value(#{commentContent},#{boardNum},#{userNum},1)
+	</insert>
+	<insert id="businessUserCommentWrite" parameterType="CommentDTO" >
+		insert into tbl_comment(comment_content,board_num,business_user_num,admin_num)
+		 value(#{commentContent},#{boardNum},#{businessUserNum},1)
+	</insert>
+	
+	<select id="commentList" resultType="CommentDTO" parameterType="map">
+		  SELECT
+	c.comment_num,	  
+    c.comment_content,
+    c.comment_date,
+    c.board_num,
+    c.user_num AS comment_user_num,
+    u.user_id AS comment_user_id,
+    bu.business_user_id,
+    bu.business_user_num 
+FROM
+    tbl_comment AS c 
+INNER JOIN
+    tbl_board AS b ON c.board_num = b.board_num
+LEFT JOIN
+    tbl_user AS u ON c.user_num = u.user_num
+LEFT JOIN
+    tbl_business_user AS bu ON c.business_user_num = bu.business_user_num where c.board_num = 1
+     order by comment_date desc limit #{startRow}, #{rowCount}
+	</select>
+	
+	<delete id="commentDelete">
+		delete from tbl_comment where comment_num = #{commentNum}
+	</delete>
+</mapper>

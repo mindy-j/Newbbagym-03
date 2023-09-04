@@ -1,10 +1,3 @@
-var remove = document.getElementById("delete");
-
-remove.addEventListener("click",function(){
-    confirm("정말로 삭제하겠습니까?")
-})
-
-
 
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
@@ -74,7 +67,7 @@ comm.addEventListener('click',function(){
     }
 })
 
-var rmbtn = document.getElementById('rm-btn')
+/*var rmbtn = document.getElementById('rm-btn')
 rmbtn.addEventListener('click',function(){
     confirm('정말 댓글을 삭제하시겠습니까?');
-})
+})*/

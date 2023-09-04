@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+   <insert id="gymWrite" parameterType="BoardDTO">
+         INSERT INTO tbl_board(board_name, board_address, board_price, board_content, board_notice,board_time, board_date, board_category, image_name, admin_num, business_user_num)
+      VALUES(#{boardName},#{boardAddress},#{boardPrice},#{boardContent},#{boardNotice},#{boardTime}, CURRENT_TIMESTAMP, #{boardCategory},#{imageName},#{adminNum}, #{businessUserNum})
+   </insert>
+   
+   <select id="getList" parameterType = "BoardDTO" resultType="BoardDTO">
+      SELECT board_num, image_name,board_name,board_address ,board_category,business_user_num
+       FROM tbl_board order by board_date desc 
+         <!-- limit 1, 5 -->
+   </select>
+   
+    <!-- BoardDetail -->
+   <select id="selBoardDetail"  resultType="BoardDTO">
+      select board_num, board_name, board_address, board_price, board_content, board_notice, board_time, board_date, board_category, image_name, business_user_num
+      from tbl_board where board_num = #{boardNum}
+   </select>
+   <!-- 게시물 삭제 -->
+   <delete id="gymDelete">
+      delete from tbl_board where board_num = #{boardNum}
+   </delete>
+   
+   
+   <!-- 
+   <select id="getTotal" resultType="_int">
+      select count(board_num) from tbl_board
+   </select> -->
+</mapper>
