@@ -27,7 +27,7 @@
             </li>
             <li>
                 <div class="admin_header_category">
-                    <a href="adminNotice.jsp">공지사항 관리</a>
+                    <a href="adminNotice.me">공지사항 관리</a>
                 </div>
             </li>
         </ul>

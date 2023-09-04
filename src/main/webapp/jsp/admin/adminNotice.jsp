@@ -41,12 +41,12 @@
         </ul>
     </div>
     <!--여기까지 admin_header-->
-    <div class="container">
+  
         <div class="title">
             <h2>공지</h2>
         </div>
         
-        
+          <div class="container">
         <c:choose>
              <c:when test = "${not empty noticeBoardList}">
               <c:forEach var="noticeBoard" items="${noticeBoardList}">
@@ -70,6 +70,7 @@
         
         <!-- 1번째 div -->
         <div class="pagination">
+        	<div><!-- 번호들을 묶어주는 박스 -->
         <ul>
           <!-- ========== 페이징 처리 예시 ============ -->
           
@@ -91,6 +92,7 @@
           </c:if>
           <!-- ========== /페이징 처리 예시 ============ -->
         </ul>
+		</div><!-- 번호들을 묶어주는 박스 끝-->   
       </div>
 
         

@@ -42,8 +42,8 @@ public Result execute(HttpServletRequest request, HttpServletResponse response) 
         
 
         boardDTO.setBoardName(mr.getParameter("title"));
-        boardDTO.setImageName(mr.getFile("photoName").toString().substring(57));
-        System.out.println(mr.getFile("photoName").toString().substring(57));
+        boardDTO.setImageName(mr.getFile("photoName").toString().substring(50));
+        System.out.println(mr.getFile("photoName").toString().substring(50));
         boardDTO.setBoardAddress(mr.getParameter("address"));
        
         
